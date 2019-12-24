@@ -1,1 +1,1 @@
-# val-zshtheme
+# VAL - ZSH theme for trrrrrrrrrrue hackermen
