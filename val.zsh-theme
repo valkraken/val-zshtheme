@@ -1,7 +1,6 @@
-PROMPT="%(?:%{$fg_bold[red]%}%n@%M :%{$fg_bold[red]%}[ERROR] )"
-PROMPT+='%{$fg[blue]%}[%c]%{$reset_color%} $(git_prompt_info)'
-
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}[X]"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+PROMPT="%B%F{40}[%f%b%B%n%b %B%1d%b%B%F{40}]%f%b"
+PROMPT+='$(git_prompt_info) '
+ZSH_THEME_GIT_PROMPT_PREFIX=" %Bgit:%F{40}(%f%f%b"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%F{40}%B) *%f%b"
+ZSH_THEME_GIT_PROMPT_CLEAN="%F{40}%B)%f%b"
